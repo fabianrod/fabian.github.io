@@ -1,0 +1,91 @@
+/*
+@author: Fabián Rodríguez
+@description: Personal website
+*/
+
+/*----------------------------------
+General styles
+-----------------------------------*/
+
+body {
+    align-items: center;
+    background-color: #2d3436;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: row;    
+    justify-content: center;
+}
+
+.main-card {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 718px;
+    height: 500px;
+}
+
+/*----------------------------------
+Header
+-----------------------------------*/
+
+.header {
+    background-color: #3f3f3f;
+    height: 124px;
+    text-align: center;
+    width: 100%;  
+
+}
+
+.header__photo {
+    border-radius: 50%;
+    margin-top: 45px;
+    border: 5px solid #fff;
+
+}
+
+/*----------------------------------
+Username information
+-----------------------------------*/
+
+.username-info {
+    text-align: center;
+    margin-top: 82px;
+}
+
+.username-info h1 {
+    font-size: 32px;
+    font-weight: 300;
+    color: #2a2a2a;
+    line-height: 25px;
+}
+
+.username-info h1 + span {
+    font-weight: 100;
+    font-size: 18px;
+    color: #2a2a2a;
+
+}
+
+/*----------------------------------
+Social icons
+-----------------------------------*/
+
+.social-icons {
+    text-align: center;
+    margin-top: 10px;
+}
+.social-icons img {
+    width: 23px;
+    height: 23px;
+    margin: 2px;
+}
+
+/*----------------------------------
+Responsive
+-----------------------------------*/
+
+@media screen and (max-width: 750px) {
+    .main-card {
+        margin: 20px;
+    }
+}
+
