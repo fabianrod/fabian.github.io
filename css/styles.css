@@ -22,7 +22,6 @@ body {
     background-color: #fff;
     border-radius: 5px;
     width: 718px;
-    height: 500px;
 }
 
 .grid {
@@ -77,7 +76,7 @@ Username information
 
 .username-info {
     text-align: center;
-    margin-top: 82px;
+    margin-top: 75px;
 }
 
 .username-info h1 {
@@ -122,10 +121,14 @@ Skills list
     font-size: 13px;
     font-weight: 700;
     display: block;
+    margin-bottom: 8px;
 }
 
 .group-skills {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3px;
 }
 
 .group-skills__label {
@@ -135,13 +138,42 @@ Skills list
 }
 
 .group-skills__progress {
-    flex-basis: 80%    
+    flex-basis: 80% 
 }
 
 .green-dark  {
     background: #2D3436 !important;
 }
 
+.progressbar {
+    width: 80%;
+    height: 5px;
+    background-color: #eaeaea;
+    border-radius: 2px;
+}
+
+.progressbar__percentage {
+    height: 5px;
+    background-color: #2D3436;
+}
+
+.percentage-80 {
+    width: 80%;
+}
+
+.percentage-40 {
+    width: 40%
+}
+
+.percentage-50 {
+    width: 50%
+}
+
+.wide-list-skills span {
+    color: #6A7A85;
+    font-size: 13px;
+    font-weight: 300;
+}
 
 /*----------------------------------
 Responsive
@@ -167,5 +199,12 @@ Responsive
 
     .username-info {
         margin-top: 24px;
+    }
+
+    .group-skills__label {
+        flex-basis: 30%;
+    }
+    .group-skills__progress {
+        flex-basis: 70% 
     }
 }
