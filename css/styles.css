@@ -42,12 +42,33 @@ Header
     height: 124px;
     text-align: center;
     width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header__photo {
     border-radius: 50%;
     margin-top: 45px;
     border: 5px solid #fff;
+}
+
+.menu {
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.menu a {
+    background-color: #2d3436;
+    color: #fff;
+    border-radius: 2px;
+    padding: 2px 8px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: .5s
+}
+
+.menu a:hover {
+    background-color: #40484b; 
 }
 
 /*----------------------------------
@@ -109,6 +130,8 @@ Skills list
 
 .group-skills__label {
     flex-basis: 20%;
+    font-size: 13px;
+    font-weight: 300;
 }
 
 .group-skills__progress {
@@ -130,3 +153,19 @@ Responsive
     }
 }
 
+@media screen and (max-width: 650px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items:  flex-end;
+    }
+
+    .menu a {
+        margin-bottom: 5px;        
+    }
+
+    .username-info {
+        margin-top: 24px;
+    }
+}
