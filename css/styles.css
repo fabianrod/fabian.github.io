@@ -29,7 +29,7 @@ body {
 }
 
 .grid .column {
-    flex: auto;
+    flex: 50%;
 }
 
 /*----------------------------------
@@ -37,7 +37,7 @@ Header
 -----------------------------------*/
 
 .header {
-    background-color: #3f3f3f;
+    background: url('../images/bg.png');
     height: 124px;
     text-align: center;
     width: 100%;
@@ -90,7 +90,8 @@ Username information
     font-weight: 100;
     font-size: 18px;
     color: #2a2a2a;
-
+    display: block;
+    margin-top: -10px;
 }
 
 /*----------------------------------
@@ -114,6 +115,14 @@ Skills list
 
 .skills-list {
     padding: 5px;
+}
+
+.skills-list__title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #2a2a2a;
+    display: block;
+    margin-bottom: 10px;
 }
 
 .skills-list__subtitle {
@@ -173,6 +182,48 @@ Skills list
     color: #6A7A85;
     font-size: 13px;
     font-weight: 300;
+}
+
+.wide-list-skills span > a {
+    color: #6A7A85;
+    text-decoration: none;
+}
+
+/*----------------------------------
+Personal projects
+-----------------------------------*/
+
+.group-items {
+    margin-bottom: 10px;
+}
+
+.group-items__description {
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: -5px;
+}
+
+/*----------------------------------
+Talks
+-----------------------------------*/
+
+.group-talks {
+    margin-bottom: 10px;
+}
+
+.group-talks__date {
+    font-weight: 300;
+    font-size: 10px;
+    color: #6a7a85;
+    display: block;
+}
+
+.group-talks__subtitle a{
+    display: block;
+    font-weight: 300;
+    font-size: 13px;
+    color: #000;
+    margin-top: 1px;
 }
 
 /*----------------------------------
